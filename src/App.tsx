@@ -1,6 +1,7 @@
 import React, { FC } from 'react';
 import './App.css';
 import TodoForm from './components/TodoForm';
+import TodoList from './components/TodoList';
 
 const App: FC = () => {
   
@@ -10,6 +11,7 @@ const App: FC = () => {
         <div className="text-center text-4xl font-bold">Todo List</div>
       </header>
       <TodoForm />
+      <TodoList />
     </div>
   );
 }
