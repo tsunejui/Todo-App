@@ -1,24 +1,15 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { FC } from 'react';
 import './App.css';
+import TodoForm from './components/TodoForm';
 
-function App() {
+const App: FC = () => {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+    <div>
+      <header className="w-full h-24 flex justify-center items-center bg-green-400">
+        <div className="text-center text-4xl font-bold">Todo List</div>
       </header>
+      <TodoForm />
     </div>
   );
 }
